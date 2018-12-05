@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<title>Coriolis Effect Demonstration</title>
+</head>
+<body>
+<h1>Coriolis Effect Demonstration</h1>
+<p>Four friends are sitting on a rotating roundabout. The red friend can throw a ball towards
+the centre of the roundabout (use the "Throw ball" button). The left-hand image shows the view from above, from a camera
+that is fixed in space relative to the ground. The right-hand image shows the view from
+above, from a camera that is fixed to the roundabout.</p>
+
+<p>The small red line on the red friend shows the initial velocity vector of the ball as
+it is released. In order to make the ball go directly through the centre of the roundabout, you
+will need to cancel out the tangential velocity: the red
+friend needs to throw the ball towards his right since he is moving towards his left.</p>
+
+<p>The ball travels in a straight line through space (as you can see on the
+left-hand image), but to observers who are
+rotating with the roundabout
+(the right-hand image) it appears to travel through a curved path.</p>
+
+<p>See if you can play with the parameters to make the ball pass directly through the centre,
+return to the thrower, hit one of his friends, or do several laps
+before exiting.</p>
+<hr>
+<span id="params"></span><br>
+<canvas id="canvas1" width="400" height="400"></canvas>
+<canvas style="padding-left: 80px" id="canvas2" width="400" height="400"></canvas><br>
+
+Rotation speed: <input id="rpm" value="10"> rpm<br>
+<button id="update">Update</button> <span id="tangential"></span><br>
+V<sub>x</sub>: <input id="vx" value="0"> m/s (in rotating reference frame)<br>
+V<sub>y</sub>: <input id="vy" value="2"> m/s (in rotating reference frame)<br>
+<button id="shoot">Throw ball</button>
+<button id="reset">Reset settings</button>
+
+<hr>
+
+<i>By <a href="https://incoherency.co.uk">James Stanley</a>. Please email me if you have any comments: <a href="mailto:james@incoherency.co.uk">james@incoherency.co.uk</a>.</i>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="coriolis.js"></script>
+</body>
+</html>
