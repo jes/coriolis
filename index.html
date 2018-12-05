@@ -6,7 +6,8 @@
 <body>
 <h1>Coriolis Effect Demonstration</h1>
 <p>Four friends are sitting on a rotating roundabout. The red friend can throw a ball towards
-the centre of the roundabout (use the "Throw ball" button). The left-hand image shows the view from above, from a camera
+the centre of the roundabout (use the "Throw ball" button) with an adjustable
+velocity. The left-hand image shows the view from above, from a camera
 that is fixed in space relative to the ground. The right-hand image shows the view from
 above, from a camera that is fixed to the roundabout.</p>
 
@@ -28,10 +29,11 @@ before exiting.</p>
 <canvas id="canvas1" width="400" height="400"></canvas>
 <canvas style="padding-left: 80px" id="canvas2" width="400" height="400"></canvas><br>
 
-Rotation speed: <input id="rpm" value="10"> rpm<br>
-<button id="update">Update</button> <span id="tangential"></span><br>
-V<sub>x</sub>: <input id="vx" value="0"> m/s (in rotating reference frame)<br>
-V<sub>y</sub>: <input id="vy" value="2"> m/s (in rotating reference frame)<br>
+Rotation speed: <input style="width:50px" id="rpm" value="10"> rpm<br>
+<button id="update">Update</button> <span id="tangential"></span><br><br>
+Speed at which ball is thrown (relative to the red friend):<br>
+V<sub>x</sub>: <input style="width:50px" id="vx" value="0"> m/s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+V<sub>y</sub>: <input style="width:50px" id="vy" value="2"> m/s<br>
 <button id="shoot">Throw ball</button>
 <button id="reset">Reset settings</button>
 
