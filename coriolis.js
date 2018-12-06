@@ -66,7 +66,7 @@ window.setInterval(function() {
 
     ctx.beginPath();
     ctx.rect(0,0,400,400);
-    ctx.fillStyle = 'rgba(255,255,255,0.4)';
+    ctx.fillStyle = 'rgba(255,255,255,0.3)';
     ctx.fill();
 
     ctx.translate(200,200);
