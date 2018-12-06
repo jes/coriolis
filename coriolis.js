@@ -23,14 +23,13 @@ $('#shoot').click(function() {
 });
 
 $('#reset').click(function() {
-    show_vall = false;
+    show_ball = false;
     $('#rpm').val("10");
     $('#vx').val("0");
     $('#vy').val("2");
 });
 
 $('#reset').click();
-$('#update').click();
 
 // update logic and graphics every 25ms (40Hz)
 window.setInterval(function() {
