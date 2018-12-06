@@ -51,7 +51,7 @@ window.setInterval(function() {
     var ctx = c.getContext('2d');
 
     ctx.beginPath();
-    ctx.rect(0,0,800,400);
+    ctx.rect(0,0,400,400);
     ctx.fillStyle = 'rgba(255,255,255,0.3)';
     ctx.fill();
 
@@ -65,7 +65,7 @@ window.setInterval(function() {
     ctx = c.getContext('2d');
 
     ctx.beginPath();
-    ctx.rect(0,0,800,400);
+    ctx.rect(0,0,400,400);
     ctx.fillStyle = 'rgba(255,255,255,0.4)';
     ctx.fill();
 
