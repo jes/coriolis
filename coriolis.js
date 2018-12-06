@@ -8,12 +8,6 @@ let ballx = 0; // metres (0,0) = centre of roundabout
 let bally = 0; // metres
 let show_ball = false;
 
-$('#update').click(function() {
-    rpm = parseFloat($('#rpm').val());
-    $('#params').text("Turning at " + rpm + " rpm");
-    $('#tangential').text("Tangential velocity: " + Math.round(100*tangential_velocity())/100 + " m/s");
-});
-
 $('#shoot').click(function() {
     show_ball = true;
     // convert vx,vy from roundabout coords into world coords
@@ -41,7 +35,9 @@ $('#update').click();
 // update logic and graphics every 25ms (40Hz)
 window.setInterval(function() {
     // physics
-    degrees_per_25ms = (rpm * 360 * 25) / (60*1000);
+    rpm = parseFloat($('#rpm').val());
+    $('#tangential').text("Tangential velocity: " + Math.round(100*tangential_velocity())/100 + " m/s");
+    let degrees_per_25ms = (rpm * 360 * 25) / (60*1000);
     angle += degrees_per_25ms;
     while (angle < 0)
         angle += 360;
